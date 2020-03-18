@@ -1,0 +1,26 @@
+version: v4
+
+base: docker-registry.wikimedia.org/wikimedia-buster
+
+runs:
+  insecurely: true
+
+lives:
+  in: /srv/wikispeech-mockup
+   
+variants:
+  production:
+    apt:
+      packages: [ ca-certificates, python-setuptools ]
+    python:
+        version: python2.7
+        requirements: [ requirements-more-mishkal.txt, src/mishkal/requirements.txt ]
+    copies: 
+      - from: local
+        source: ./src
+        destination: ./src
+      - from: local
+        source: ./entrypoint.sh
+        destination: .
+    entrypoint: [ ./entrypoint.sh ]
+
