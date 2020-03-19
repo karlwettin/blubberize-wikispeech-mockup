@@ -23,6 +23,8 @@ else
   cd wikispeech_mockup
 fi
 
+mkdir wikispeech_server/tmp
+
 # back to src
 cd ..
 

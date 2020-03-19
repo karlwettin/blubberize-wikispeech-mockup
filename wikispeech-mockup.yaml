@@ -11,10 +11,10 @@ lives:
 variants:
   production:
     apt:
-      packages: [ ca-certificates, python-setuptools ]
+      packages: [ python3-setuptools, ca-certificates, opus-tools ]
     python:
-        version: python2.7
-        requirements: [ requirements-more-mishkal.txt, src/mishkal/requirements.txt ]
+        version: python3
+        requirements: [ src/wikispeech_mockup/requirements.txt ]
     copies: 
       - from: local
         source: ./src
