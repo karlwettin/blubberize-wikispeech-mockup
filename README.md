@@ -4,7 +4,6 @@
 
 ## build.sh
 
-* Removes all but the Maven repository in ./src/gradle_cache/caches
 * Creates the Docker image from Blubber YAML.
 
 ## run.sh
