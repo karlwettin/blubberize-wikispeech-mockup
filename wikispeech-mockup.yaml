@@ -22,5 +22,7 @@ variants:
       - from: local
         source: ./entrypoint.sh
         destination: .
+      - from: local
+        source: ./docker-compose-entrypoint.sh
+        destination: .
     entrypoint: [ ./entrypoint.sh ]
-

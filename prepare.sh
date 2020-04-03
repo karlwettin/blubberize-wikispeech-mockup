@@ -31,4 +31,6 @@ cd ..
 # back to root
 cd ..
 
+cp docker-compose.conf src/wikispeech_mockup/
+
 echo "Success!"
