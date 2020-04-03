@@ -11,7 +11,7 @@ lives:
 variants:
   production:
     apt:
-      packages: [ python3-setuptools, ca-certificates, opus-tools ]
+      packages: [ python3-setuptools, ca-certificates, opus-tools, git ]
     python:
         version: python3
         requirements: [ src/wikispeech_mockup/requirements.txt ]
