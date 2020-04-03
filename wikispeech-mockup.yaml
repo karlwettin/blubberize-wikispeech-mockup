@@ -22,7 +22,15 @@ variants:
       - from: local
         source: ./entrypoint.sh
         destination: .
+
+# These should be moved away from production to a compose-variant
+# Begin
       - from: local
         source: ./docker-compose-entrypoint.sh
         destination: .
+      - from: local
+        source: ./wait-for-it.sh
+        destination: .
+# End
+
     entrypoint: [ ./entrypoint.sh ]
